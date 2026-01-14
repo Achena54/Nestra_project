@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -457,6 +462,31 @@ hr{
     font-weight: 400;
 }
 
+/* ---------------------- animation---------------------- */
+.home_animation{
+    display: inline-flex;
+     animation: scroll 12s linear infinite;
+}
+.scroll{
+    font-size: 100px;
+    font-weight:500;
+}
+.star{
+    font-size: 128px;
+    font-weight:400;
+    
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 /* -------------------- feature list ----------------- */
 .feature_card{
      background-color: rgb(24, 24, 24);
@@ -499,19 +529,100 @@ hr{
    /* ------------------------ welcome ------------------- */
 .welcome_card{
     background-color: rgb(24, 24, 24);
+    position: relative;
 }
 .welcome_card1{
     max-width: 660px;
     width: 100%;
     height:84px;
 }
+.welcome_card img{
+    max-width: 618px;
+    width: 100%;
+    height: 648px;
+}
 .welcomecard_subheading{
     max-width: 610px;
     width: 100%;
     height:48px;
 }
-
+.ellipse img{
+    max-width: 142px;
+    width: 100%;
+    height: 142px;
+}
+.ellipse{
+    position: absolute;
+    top: 253px;
+    bottom: 253px;
+    left: 517px;
+    right: 41px;
+}
 /* ------------------------ discover --------------------- */
 .project_card{
 background-color:rgb(24, 24, 24) ;
+margin-top: 57px;
+max-width: 648px;
+width: 100%;
+height: 611px;
+}
+
+.discover_subheading{
+    max-width: 957px;
+    width: 100%;
+    height: 96px;
+}
+.discover_btn{
+    margin-left:390px;
+}
+
+/* ----------- news ---------------- */
+.news_card{
+   background-color:rgb(24, 24, 24) ; 
+}
+.news_card img{
+    max-width: 424px;
+    width: 100%;
+    height: 230px;
+}
+/* .newscard_body{
+    max-width: 314px;
+    width: 100%;
+    height: 172px;
+} */
+.news_heading{
+    max-width: 314px;
+    width: 100%;
+    height: 17px;
+   font-size: 14px;
+}
+.news_para1{
+    max-width: 314px;
+    width: 100%;
+    height: 60px;
+    font: 25px;
+    font-weight: 500;
+}
+.news_para2{
+    max-width:400px;
+    width: 100%;
+    height:65px; 
+     margin-bottom: 35px;
+     font-family: "Plus Jakarta Sans", sans-serif;
+     font-weight: 500;
+     font-size: 10px;
+}.news_btn{
+   border-bottom:1px solid var(--greywhite);
+}
+
+/* ------------------------- footer ------------------ */
+
+/* form{
+    border: 2px solid var(--orange);
+} */
+    
+
+.subscribe{
+    margin-left: 412px;
+    
 }
