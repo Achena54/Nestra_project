@@ -75,7 +75,10 @@ img {
     background: var(--greywhite);
     color: var(--black);
 }
+.hovering:hover {
+    transform: translateY(-6px);
 
+}
 /* ---------- top bar --------- */
 .topbar {
     background: linear-gradient(#0f0f0f, #1a1a1a);
@@ -117,7 +120,7 @@ img {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .topbar-center {
         display: block;
     }
@@ -140,7 +143,7 @@ img {
 /* ------------------- NAV BAR ----------------------------*/
 .nestra-navbar {
     /* background: linear-gradient(to bottom right, #0f0f0f, #ead9d9); */
-    background-color: #896565;
+    /* background-color: #896565; */
     padding: 15px 0;
     position: absolute;
     top: 45px;
@@ -211,7 +214,8 @@ img {
 /* responsive */
 @media screen and (max-width: 767px) {
     .nestra-navbar {
-        margin-top: 65px;
+        margin-top:100px;
+        
 
     }
 
@@ -231,6 +235,7 @@ img {
     .nav_item,
     .nav_icon {
         font-size: 10px;
+        color: var(--white);
     }
 }
 
@@ -350,10 +355,6 @@ img {
     color: var(--greywhite);
 }
 
-.property-card:hover {
-    transform: translateY(-6px);
-
-}
 
 /* ------------- circle badge --------------- */
 
@@ -457,6 +458,27 @@ hr{
 }
 
 /* -------------------- feature list ----------------- */
+.feature_card{
+     background-color: rgb(24, 24, 24);
+}
+.card_subtitle{
+     max-width: 246px;
+    width: 100%;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.first_feature{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 246px;
+    width: 100%;
+    height: 196px;
+}
+.card_border{
+    border: 1px solid var(--greywhite);
+}
 .card_title{
     font-size: 16px;
     font-weight: 600;
@@ -469,5 +491,27 @@ hr{
     color: var(--greywhite);
    }
 
+.feature_border{
+   border: 1px solid var(--greywhite);
+}
+
+
    /* ------------------------ welcome ------------------- */
-   
+.welcome_card{
+    background-color: rgb(24, 24, 24);
+}
+.welcome_card1{
+    max-width: 660px;
+    width: 100%;
+    height:84px;
+}
+.welcomecard_subheading{
+    max-width: 610px;
+    width: 100%;
+    height:48px;
+}
+
+/* ------------------------ discover --------------------- */
+.project_card{
+background-color:rgb(24, 24, 24) ;
+}
