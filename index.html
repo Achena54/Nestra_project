@@ -33,7 +33,7 @@
 
                     <!-- Center -->
                     <div class="col-md-4 text-center topbar-center">
-                        <small>100% verified properties, no hidden cost</small>
+                        <span>100% verified properties, no hidden cost</span>
                     </div>
 
                     <!-- Right -->
@@ -91,13 +91,13 @@
                 <!-- Icons -->
                 <div class="navicons">
                     <ul class="d-flex align-items-center nav-icons list-unstyled mb-lg-0">
-                        <li class="nav-icon border-start icon_box">
+                        <li class="nav-icon nav_icon border-start icon_box">
                             <a class="nav-link px-4" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
-                        <li class="nav-icon icon_box">
+                        <li class="nav-icon nav_icon icon_box">
                             <a class="nav-link px-4" href="#"> <i class="fa-regular fa-user"></i></a>
                         </li>
-                        <li class="nav-icon icon_box ">
+                        <li class="nav-icon nav_icon icon_box ">
                             <a class="nav-link px-4" href="#"><i class="fa-regular fa-heart"></i></a>
                         </li>
                     </ul>
@@ -110,6 +110,7 @@
         </nav>
     </header>
     <main>
+        <!-- ---------------------- banner ------------------------- -->
         <section class="banner">
             <div class="hero-overlay"></div>
 
@@ -122,9 +123,9 @@
                         </h1>
 
                         <p class="hero-text">
-                            Without wasting time looking for a parking space, losting in queues,
-                            frowning consultants and unloading.
-                        </p>
+                            Without wasting time looking for a parking space, losting in </p>
+                        <p class="hero-text"> queues,frowning consultants and unloading.</p>
+
                         <button class="common-btn">
                             <a href="#" class="text-white">
                                 Explore Now <span class="icon-box ms-3">
@@ -146,7 +147,7 @@
                 <!-- Header -->
                 <div class="row mb-5">
                     <div class="col-lg-6">
-                        <small class="text-warning all_heading"> ■ Shop by Category</small>
+                        <span class="text-warning all_heading"> ■ Shop by Category</span>
                         <h2 class="text-white mt-3 all_subheading">
                             The properties you need for the look<br>you want
                         </h2>
@@ -160,18 +161,18 @@
                     </div>
                 </div>
 
-                <!-- Cards -->
+
                 <div class="row">
 
                     <div class="col-md-6 col-lg">
                         <div class="property-card hovering">
-                            <span class="count">01</span>
+                            <span class="property_count">01</span>
                             <figure>
                                 <img src="./images/luxuryimage.png" alt="luxury image">
                             </figure>
                             <div class="property-text">
                                 <h5 class="text-white ps-2">Luxury</h5>
-                                <small class="ps-2">Apartments</small>
+                                <span class="ps-2 text-white">Apartments</span>
                             </div>
 
                         </div>
@@ -179,13 +180,13 @@
 
                     <div class="col-md-6 col-lg">
                         <div class="property-card hovering">
-                            <span class="count">02</span>
+                            <span class="property_count">02</span>
                             <figure class="category_card">
                                 <img src="./images/villaimage.png" alt="villa image">
                             </figure>
                             <div class="property-text">
                                 <h5 class="text-white ps-2">Villas</h5>
-                                <small class="ps-2">& Bungalows</small>
+                                <span class="ps-2 text-white">& Bungalows</span>
                             </div>
 
                         </div>
@@ -193,13 +194,13 @@
 
                     <div class="col-md-6 col-lg">
                         <div class="property-card hovering">
-                            <span class="count">03</span>
+                            <span class="property_count">03</span>
                             <figure>
                                 <img src="./images/penthouseimage.png" alt="penthouse image">
                             </figure>
                             <div class="property-text">
                                 <h5 class="text-white ps-2">Penthouses</h5>
-                                <small class="ps-2">Projects</small>
+                                <span class="ps-2 text-white">Projects</span>
                             </div>
 
                         </div>
@@ -207,13 +208,13 @@
 
                     <div class="col-md-6 col-lg">
                         <div class="property-card hovering">
-                            <span class="count">04</span>
+                            <span class="property_count">04</span>
                             <figure>
                                 <img src="./images/waterfrontimage.png" alt="waterfront image">
                             </figure>
                             <div class="property-text">
                                 <h5 class="text-white ps-2">Waterfront</h5>
-                                <small class="ps-2">Apartments</small>
+                                <span class="ps-2 text-white">Apartments</span>
                             </div>
 
                         </div>
@@ -221,20 +222,20 @@
 
                     <div class="col-md-6 col-lg">
                         <div class="property-card hovering">
-                            <span class="count">05</span>
+                            <span class="property_count">05</span>
                             <figure>
                                 <img src="./images/dupleximage.png" alt="duplex image">
                             </figure>
                             <div class="property-text">
                                 <h5 class="text-white ps-2">Duplexes</h5>
-                                <small class="ps-2">Projects</small>
+                                <span class="ps-2 text-white">Projects</span>
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                <!-- category btn -->
+
                 <div class="d-flex align-items-center mt-5">
                     <div>
                         <button class="common-btn me-2">
@@ -252,33 +253,83 @@
             </div>
         </section>
         <!-- -------------------- circle badge -------------------- -->
-        <!-- <section class="badge section_padding">
+        <section class="circle section_padding">
             <div class="container">
                 <div class="row">
-                    <div class="col col-lg-6">
-                        <figure class="bg-success">
-                            <img src="./images/RotatingText.png" alt="rotating image">
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <figure class="circle_img">
+                            <img src="./images/RotatingText.png" alt="Rotating">
                         </figure>
                     </div>
-                    <div class="col col-lg-6 bg-info">
-                        <div class="experience">
-                            <span class="years">13</span>
-                            <div>
-                                <p class="mb-0 exp-title">Years of shaping</p>
-                                <p class="mb-0 exp-sub">bold new design</p>
+                    <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex">
+                        <figure class="circle_img1">
+                            <img src="./images/13.png" alt="13_img">
+                        </figure>
+                        <div class="circle_text">
+                            <p class="years">Years of shaping</p>
+                            <p class="bold text-white">bold new design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="circle_text text-light">Discover thoughtful spaces made for daily living and work
+                            needs with design solutions that fit every unique project vision</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <!-- Left Content -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <span class="text-warning all_heading"> ■ work process</span>
+                        <h2 class="text-white mt-3 all_subheading">
+                            A step-by-step approach to finding your perfect home.
+                        </h2>
+                    </div>
+                    <!-- Right Steps -->
+                    <div class="col-lg-6">
+                        <div class="step-box">
+                            <div class="step-item">
+                                <span class="count">01</span>
+                                <div class="count_content">
+                            <h5 class="text-white">Initial Planning</h5>
+                                    <p>
+                                        We start by understanding your goals, location preferences,
+                                        and budget to create a clear plan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <span class="count">02</span>
+                                <div class="count_content">
+                                    <h5 class="text-white">Property Exploration</h5>
+                                    <p>
+                                        Browse verified listings with visuals and tours.
+                                        Compare options confidently.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <span class="count">03</span>
+                                <div class="count_content">
+                                    <h5 class="text-white">Site Visit</h5>
+                                    <p>
+                                        Experience shortlisted properties in person
+                                        with guided visits.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item border-0">
+                                <span class="count">04</span>
+                                <div class="count_content">
+                                    <h5 class="text-white">Easy Handover</h5>
+                                    <p>
+                                        Finalize documentation smoothly
+                                        and complete ownership transfer.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    
-                </div>
-            </div>
-        </section> -->
-        <section class="badge section_padding ">
-            <div class="container bg-info">
-                <div class="row">
-                    <div class="col">lorem1</div>
-                    <div class="col">lorem1</div>
                 </div>
             </div>
         </section>
@@ -286,7 +337,7 @@
         <section class="our_story section_padding">
             <div class="container">
                 <div class="row">
-                    <div class="col story_position">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 story_position">
                         <figure class="story_img ">
                             <img src="./images/ourstoryimage.png" alt="building image">
                         </figure>
@@ -302,7 +353,7 @@
                                 </p>
                                 <hr>
                                 <h6 class="mb-0 pt-2 ps-5 text-black">Mr. Chailes</h6>
-                                <small class="pt-2 ps-5 text-black">CEO Nestra</small>
+                                <span class="pt-2 ps-5 text-black">CEO Nestra</span>
                             </div>
 
                             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nulla?</p>
@@ -311,7 +362,7 @@
 
                     </div>
 
-                    <div class="col">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <span class="story text-warning all_heading">■ Our Story</span>
 
                         <h2 class="mt-3 text-white all_subheading story_sub">
@@ -356,43 +407,48 @@
             </div>
 
         </section>
-<!-- --------------------- after story---------------------- -->
+        <!-- --------------------- after story---------------------- -->
         <section class="after_story section_padding">
             <div class="container">
-                <div class="row tag">
-                    <div class="col col-12 col-md-3 col-lg-3 card_size">
+                <div class="row">
+                    <div class="col col-12 col-md-3 col-lg-3 ">
                         <p class="text-warning benefit">⚊ Free shipping</p>
-                        <small class="text-white benefit_details">Free Shipping for orders over £130</small>
+                        <span class="text-white benefit_details">Free Shipping for orders over £130</span>
                     </div>
-                    <div class="col col-12 col-md-3 col-lg-3 card_size">
+                    <div class="col col-12 col-md-3 col-lg-3 ">
                         <p class="text-warning benefit"> ⚊ Money guarantee</p>
-                        <small class="text-white benefit_details">Within 30 days for an exchange.</small>
+                        <span class="text-white benefit_details">Within 30 days for an exchange.</span>
                     </div>
-                    <div class="col col-12 col-md-3 col-lg-3 card_size">
+                    <div class="col col-12 col-md-3 col-lg-3 ">
                         <p class="text-warning benefit">⚊ Online support</p>
-                        <small class="text-white benefit_details">24 hours a day, 7 days a week</small>
+                        <span class="text-white benefit_details">24 hours a day, 7 days a week</span>
                     </div>
-                    <div class="col col-12 col-md-3 col-lg-3 card_size">
+                    <div class="col col-12 col-md-3 col-lg-3 ">
                         <p class="text-warning benefit">⚊ Flexible payment</p>
-                        <small class="text-white benefit_details">Pay with multiple credit cardsv</small>
+                        <span class="text-white benefit_details">Pay with multiple credit cardsv</span>
                     </div>
                 </div>
             </div>
         </section>
-             <!-- ---------------- animation --------------- -->
-         <section class="animation section_padding">
-            <div class="conatiner">
-                  <div class="home_animation">
-                    <span class="scroll text-white">Homes built for life</span>
-                    <span class="star text-warning">✱</span>
-                    <span class="scroll text-white">Homes built for life</span>
-                    
-                    
-                    
-                   
-                  </div>
+        <!-- ---------------- animation --------------- -->
+        <section class="animation section_padding">
+            <div class="container">
+                <div class="animation_part">
+                    <div class="home_animation">
+                        <span class="scroll text-white">Homes built for life</span>
+                        <span class="star text-warning">✱</span>
+                        <span class="scroll text-white">Homes built for life</span>
+                        <span class="star text-warning">✱</span>
+                        <span class="scroll text-white">Homes built for life</span>
+                        <span class="star text-warning">✱</span>
+                        <span class="scroll text-white">Homes built for life</span>
+                        <span class="star text-warning">✱</span>
+                        <span class="scroll text-white">Homes built for life</span>
+                    </div>
+                </div>
+
             </div>
-         </section>
+        </section>
         <!-- ---------------------- Feature list------------------ -->
         <section class="feature section_padding">
             <div class="container">
@@ -429,7 +485,9 @@
                                 <p class="card-text1 card_text1 text-center">Spacious apartment with balcony, modular
                                     kitchen & easy metro access.</p>
                                 <p class="text-center text-warning">₹ 82.5L</p>
-                                <a href="#" class="btn btn-dark text-uppercase border">View Details</a>
+                                <div class="view">
+                                    <a href="#" class="btn btn-dark text-uppercase border">View Details</a>
+                                </div>
                             </div>
 
                         </div>
@@ -445,7 +503,9 @@
                                     lighting & climate
                                     control.</p>
                                 <p class="text-center text-warning">₹ 95L</p>
-                                <a href="#" class="btn btn-dark text-uppercase border">book a visit</a>
+                                <div class="view">
+                                    <a href="#" class="btn btn-dark text-uppercase border">book a visit</a>
+                                </div>
                             </div>
 
                         </div>
@@ -462,7 +522,9 @@
                                 <p class="card-text1 card_text1 text-center">Modern apartment with metro connectivity,
                                     rooftop garden, and gym access.</p>
                                 <p class="text-center text-warning">₹ 68L</p>
-                                <a href="#" class="btn  btn-dark text-uppercase border">Get quote</a>
+                                <div class="view">
+                                    <a href="#" class="btn  btn-dark text-uppercase border">Get quote</a>
+                                </div>
                             </div>
 
                         </div>
@@ -493,7 +555,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card project_card hovering">
                             <img src="./images/projectcard1.png" class="card-img-top" alt="house image1">
                             <div class="card-body">
@@ -505,7 +567,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card  project_card hovering ">
                             <img src="./images/projectcard2.png" class="card-img-top" alt="house image2">
                             <div class="card-body">
@@ -525,7 +587,7 @@
         <section class="welcome section_padding">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card mb-3 welcome_card border-0 hovering">
                             <img src="./images/companyimage1.png" class="card-img-top" alt="company image1">
                             <div class="card-body">
@@ -535,7 +597,7 @@
                                     expert guidance ensure you make the right investment with confidence.
                                 </p>
 
-                                <button class="common-btn mt-5">
+                                <button class="common-btn mt-5 welcome_btn">
                                     <a href="#" class="text-white">
                                         Explore Now <span class="icon-box ms-3">
                                             <i class="fa-solid fa-square-up-right"></i>
@@ -550,7 +612,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="card welcome_card border-0 hovering">
                             <div class="card-body">
                                 <h5 class="card-title text-warning text-capitalize all_heading mb-3"> ■ welcome to our
@@ -648,57 +710,61 @@
             </div>
         </section>
     </main>
-    <footer>
+    <!------------------- footer ---------------------------3-->
+    <footer class="footer">
         <div class="container">
             <div class="footer_upperpart">
-                <p class="text-center text-white">NEWSLETTER SIGNUP</p>
-                <p class="text-center text-white">Sign up for exclusive
-                    offers from us</p>
-                <div class="form d-block border-bottom text-center">
+                <p class="text-center text-warning">NEWSLETTER SIGNUP</p>
+                <p class="text-center text-white sign">Sign up for exclusive</p>
+                <p class="text-center text-white sign"> offers from us</p>
+                <div class="form d-block  text-center pb-2">
                     <form>
                         <input type="mail" id="mail" name="mail" placeholder="Your Email"><span
                             class="subscribe text-white">subscribe<i class="fa-solid fa-arrow-right"></i></span>
                     </form>
                 </div>
-                <div class="row">
+                <div class="row pt-5 border-top border-bottom mt-5">
                     <div class="col col-12 col-sm-12 col-md-3 text-white">
-                        <p>NESTRA ■</p>
-                        <p>The Bathrooms hnice. is the leader of floor installation and repair in the countrysed diam
+                        <p>NESTRA <span class="text-warning"> ■ </span></p>
+                        <p class="pt-3 me-5">The Bathrooms hnice. is the leader of floor installation and repair in the countrysed diam
                             nonumy eirmod tempor invidunt ut labore and
                             efficient strategy.
                         </p>
-                        <span><i class="fa-solid fa-phone-volume"></i> +1875 456 489</span>
-                        <span>round-the-clock</span>
+                        <span class=" round-the-clock"><i class="fa-solid fa-phone-volume text-warning"></i> +1875 456 489</span>
+                        <p class="text-warning">round-the-clock</p>
                     </div>
-                    <div class="col col-12 col-sm-12 col-md-3 text-white text-capitalize"><span>our properties ■</span>
+                    <div class="col col-12 col-sm-12 col-md-3 text-white text-capitalize mb-4">
+                        <p>our properties <span class="text-warning">■</span></p>
                         <ul class="list-unstyled text-capitalize ">
-                            <li class="border-bottom">villa</li>
-                            <li class="border-bottom">flats</li>
-                            <li class="border-bottom">apartments</li>
-                            <li class="border-bottom">Penthouses</li>
-                            <li class="border-bottom">Smart Homes</li>
-                            <li class="border-bottom">Duplexes</li>
-                            <li class="border-bottom">Row Houses</li>
-                            <li class="border-bottom">Waterfront Apartments</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">villa</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">flats</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">apartments</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">Penthouses</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">Smart Homes</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">Duplexes</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">Row Houses</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">Waterfront Apartments</li>
                         </ul>
 
                     </div>
-                    <div class="col col-12 col-sm-12 col-md-3 text-white"><span>Quick links ■</span>
+                    <div class="col col-12 col-sm-12 col-md-3 text-white mb-4">
+                        <p>Quick links <span class="text-warning"> ■</span></p>
                         <ul class="list-unstyled text-capitalize">
-                            <li class="border-bottom">Home</li>
-                            <li class="border-bottom">About us</li>
-                            <li class="border-bottom">properties</li>
-                            <li class="border-bottom">blog</li>
-                            <li class="border-bottom">contact us</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">Home</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">About us</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">properties</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">blog</li>
+                            <li class="border-bottom pt-3 pb-3 me-5">contact us</li>
 
                         </ul>
 
                     </div>
-                    <div class="col col-12 col-sm-12 col-md-3 text-white"><span>contact ■</span>
-                        <p>2972 Westheimer Rd. Santa Ana,
+                    <div class="col col-12 col-sm-12 col-md-3 text-white mb-3">
+                        <p class="text-capitalize">contact <span class="text-warning">■</span></p>
+                        <p class="pt-5">2972 Westheimer Rd. Santa Ana,
                             Illinois 85486 </p>
-                        <span>support@example.com</span>
-                        <span>+ (406) 555-0120</span>
+                        <p>support@example.com</p>
+                        <p class="text-warning">+ (406) 555-0120</p>
 
                         <ul class="d-flex list-unstyled">
                             <li class="border p-4 mt-3 me-2"><i class="fa-brands fa-facebook-f"></i></li>
@@ -710,6 +776,9 @@
 
                     </div>
                 </div>
+            </div>
+            <div class="text-center text-white py-4">
+                <p>© Copyright 2025 <a href="#" class="text-white"> Nestra</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>

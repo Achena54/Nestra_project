@@ -80,10 +80,12 @@ img {
     background: var(--greywhite);
     color: var(--black);
 }
+
 .hovering:hover {
     transform: translateY(-6px);
 
 }
+
 /* ---------- top bar --------- */
 .topbar {
     background: linear-gradient(#0f0f0f, #1a1a1a);
@@ -155,7 +157,7 @@ img {
     left: 0;
     right: 0;
     z-index: 100;
-    border: 2px solid var(--greywhite);
+    border-bottom: 2px solid var(--greywhite);
 }
 
 .navbar_brand {
@@ -219,8 +221,8 @@ img {
 /* responsive */
 @media screen and (max-width: 767px) {
     .nestra-navbar {
-        margin-top:100px;
-        
+        margin-top: 120px;
+
 
     }
 
@@ -289,10 +291,9 @@ img {
 }
 
 .hero-text {
-    max-width: 450px;
     text-align: center;
     color: var(--orange);
-
+    line-height: 0.5;
 }
 
 
@@ -318,7 +319,7 @@ img {
     max-width: 600px;
 }
 
-.property-card {
+.perty-card {
     position: relative;
     background: var(--black);
     padding: 15px;
@@ -327,16 +328,14 @@ img {
 }
 
 .category_card {
-    position: relative;
+    /* position: relative; */
 }
 
 .property-text {
-    position: absolute;
-    bottom: 50px;
-
-
+    /* position: absolute; */
+    /* bottom: 50px; */
+    /* top: 400px; */
 }
-
 .property-card img {
     width: 100%;
     height: 425px;
@@ -352,39 +351,110 @@ img {
     color: var(--white);
 }
 
-.property-card .count {
+.property-card .property_count {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    /* top: 15px;
+    left: 15px; */
     font-size: 12px;
-    color: var(--greywhite);
+    color: var(--white);
 }
 
 
 /* ------------- circle badge --------------- */
+.circle_text {
+    font-size: 48px;
+    margin-top: 40px;
+}
 
-.experience {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: flex-end;
+.circle_img {
+    height: 290px;
+    width: 290px;
+    margin-left: 50px;
+}
+
+.circle_img1 {
+    width: 170px;
+    height: 134px;
+    margin-right: 10px;
 }
 
 .years {
-  font-size: 64px;
-  font-weight: 700;
-  color: #f5c26b;
-  line-height: 1;
+    font-size: 50px;
+    margin-top: 10px;
+    color: var(--white);
 }
 
-.exp-title {
-  font-size: 16px;
-  color: #fff;
+.bold {
+    font-size: 40px;
+    line-height: 0;
 }
 
-.exp-sub {
-  font-size: 14px;
-  color: #aaa;
+.capital {
+    font-size: 82px;
+    padding-bottom: 153px;
+    border-right: 2px solid var(--greywhite);
+    padding-right: 20px;
+}
+
+.want_main {
+    margin-left: 30px;
+}
+
+.section-tag {
+    color: var(--orange);
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.step-item {
+    display: flex;
+}
+
+.count {
+    font-size: 82px;
+    color: var(--white);
+    margin-right: 40px;
+}
+
+.count_content h5 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.count_content {
+    max-width: 435px;
+    width: 100%;
+    padding-left: 40px;
+    border-left: 2px solid var(--greywhite);
+}
+
+.count_content p {
+    font-size: 14px;
+    color: var(--greywhite);
+    margin: 0;
+}
+
+@media screen and (max-width:767px) {
+    .circle_img {
+        height: 200px;
+        width: 200px;
+    }
+    .bold{
+        font-size: 18px;
+    }
+    .circle_text{
+        font-size: 15px;
+    }
+.count_content{
+    padding-left: 10px;
+}
+.count{
+    font-size: 20px;
+}
 }
 
 /* -------------- our story -------------- */
@@ -392,35 +462,41 @@ img {
     width: 600px;
     height: 830px;
 }
-.quotes_card{
+
+.quotes_card {
     width: 360px;
     height: 396px;
-    
+
 }
-.story_text{
+
+.story_text {
     width: 270px;
     height: 211px;
 }
-hr{
-    margin-left:50px;
+
+hr {
+    margin-left: 50px;
     color: var(--black);
 }
-.quotes_img{
+
+.quotes_img {
     width: 44px;
     height: 44px;
 }
- .story_position{
+
+.story_position {
     position: relative;
- }
- .quotes_text{
+}
+
+.quotes_text {
     position: absolute;
     top: 269px;
     bottom: 230px;
     left: 360px;
     right: 101px;
- }
+}
 
- .choose_part {
+.choose_part {
     margin-left: 80px;
     font-size: 35px;
     font-weight: 400;
@@ -432,197 +508,310 @@ hr{
     line-height: 1.5;
     margin-left: 80px;
 }
-.story_sub{
+
+.story_sub {
     max-width: 960px;
     width: 100%;
     height: 96px;
 }
-.story_descr{
+
+.story_descr {
     margin-left: 80px;
-    /* width: 1020px;
+
+}
+
+/* responsive */
+
+@media screen and (max-width: 575px) {
+    .story_img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .quotes_card {
+        width: 100px;
+        height: 150px;
+
+    }
+
+    .story_text {
+        width: 90px;
+        height: 90px;
+        font-size: 15px;
+    }
+
+    hr {
+        margin-left: 10px;
+    }
+
+    .quotes_img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .quotes_text {
+        top: 150px;
+        left: 190px;
+    }
+
+    .choose_part {
+        /* margin-left: 80px; */
+        font-size: 15px;
+    }
+
+    .story_list {
+        font-size: 18px;
+    }
+
+    .story_sub {
+        font-size: 30px;
+    }
+
+    .story_descr {
+        margin-left: 80px;
+        /* width: 1020px;
     height: ; */
+    }
 }
 
 /*----------------- after story --------------- */
-
-.card_size{
-    max-width: 330px;
-    width: 100%;
-    height: 68px;
-}
-.tag{
-    margin: 0 auto;
-}
-.benefit{
+.benefit {
     font-size: 25px;
     font-weight: 400;
 }
-.benefit_details{
+
+.benefit_details {
     font-size: 18px;
     font-weight: 400;
 }
 
 /* ---------------------- animation---------------------- */
-.home_animation{
+.animation_part {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.home_animation {
     display: inline-flex;
-     animation: scroll 12s linear infinite;
+    animation: scroll 10s linear infinite;
 }
-.scroll{
-    font-size: 100px;
-    font-weight:500;
+
+.scroll {
+    font-size: 90px;
+    font-weight: 500;
 }
-.star{
+
+.star {
     font-size: 128px;
-    font-weight:400;
-    
+    font-weight: 400;
+
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 
 /* -------------------- feature list ----------------- */
-.feature_card{
-     background-color: rgb(24, 24, 24);
+.feature_card {
+    background-color: rgb(24, 24, 24);
 }
-.card_subtitle{
-     max-width: 246px;
-    width: 100%;
-    height: 196px;
+
+.card_subtitle {
     font-size: 40px;
     font-weight: 500;
 }
-.first_feature{
+
+.first_feature {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
-    max-width: 246px;
-    width: 100%;
-    height: 196px;
 }
-.card_border{
+
+.card_border {
     border: 1px solid var(--greywhite);
 }
-.card_title{
+
+.card_title {
     font-size: 16px;
     font-weight: 600;
 }
-.card_text{
+
+.card_text {
     font: 15px;
     font: 500;
 }
-.card_text1{
-    color: var(--greywhite);
-   }
 
-.feature_border{
-   border: 1px solid var(--greywhite);
+.card_text1 {
+    color: var(--greywhite);
 }
 
+.feature_border {
+    border: 1px solid var(--greywhite);
+}
 
-   /* ------------------------ welcome ------------------- */
-.welcome_card{
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------ welcome ------------------- */
+.welcome_card {
     background-color: rgb(24, 24, 24);
     position: relative;
 }
-.welcome_card1{
+
+.welcome_card1 {
     max-width: 660px;
     width: 100%;
-    height:84px;
+    height: 84px;
 }
-.welcome_card img{
+
+.welcome_card img {
     max-width: 618px;
     width: 100%;
     height: 648px;
 }
-.welcomecard_subheading{
+
+.welcomecard_subheading {
     max-width: 610px;
     width: 100%;
-    height:48px;
+    height: 48px;
 }
-.ellipse img{
+
+.ellipse img {
     max-width: 142px;
     width: 100%;
     height: 142px;
 }
-.ellipse{
+
+.ellipse {
     position: absolute;
     top: 253px;
     bottom: 253px;
     left: 517px;
     right: 41px;
 }
-/* ------------------------ discover --------------------- */
-.project_card{
-background-color:rgb(24, 24, 24) ;
-margin-top: 57px;
-max-width: 648px;
-width: 100%;
-height: 611px;
+@media screen and (max-width:575px){
+   
 }
 
-.discover_subheading{
-    max-width: 957px;
-    width: 100%;
-    height: 96px;
+/* ------------------------ discover --------------------- */
+.project_card {
+    background-color: rgb(24, 24, 24);
+    margin-top: 57px;
 }
-.discover_btn{
-    margin-left:390px;
+.discover_btn {
+    margin-left: 390px;
+}
+
+@media screen and (max-width:575px) {
+    .discover_btn {
+        margin-left: 0px;
+    }
+    .project_card{
+        margin-top: 10px;
+    }
 }
 
 /* ----------- news ---------------- */
-.news_card{
-   background-color:rgb(24, 24, 24) ; 
+.news_card {
+    background-color: rgb(24, 24, 24);
 }
-.news_card img{
+
+.news_card img {
     max-width: 424px;
     width: 100%;
     height: 230px;
 }
+
 /* .newscard_body{
     max-width: 314px;
     width: 100%;
     height: 172px;
 } */
-.news_heading{
+.news_heading {
     max-width: 314px;
     width: 100%;
     height: 17px;
-   font-size: 14px;
+    font-size: 14px;
 }
-.news_para1{
+
+.news_para1 {
     max-width: 314px;
     width: 100%;
     height: 60px;
     font: 25px;
     font-weight: 500;
 }
-.news_para2{
-    max-width:400px;
+
+.news_para2 {
+    max-width: 400px;
     width: 100%;
-    height:65px; 
-     margin-bottom: 35px;
-     font-family: "Plus Jakarta Sans", sans-serif;
-     font-weight: 500;
-     font-size: 10px;
-}.news_btn{
-   border-bottom:1px solid var(--greywhite);
+    height: 65px;
+    margin-bottom: 35px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.news_btn {
+    border-bottom: 1px solid var(--greywhite);
 }
 
 /* ------------------------- footer ------------------ */
+.footer {
+    font-size: 18px;
+}
 
-/* form{
-    border: 2px solid var(--orange);
-} */
-    
+.sign {
+    font-size: 40px;
+    line-height: 1;
 
-.subscribe{
+}
+
+.form {
+    position: relative;
+
+}
+
+.form::after {
+    content: " ";
+    width: 680px;
+    height: 3px;
+    background: var(--white);
+    position: absolute;
+    bottom: -1px;
+    transform: translate(-50%);
+}
+
+.subscribe {
     margin-left: 412px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+input[type="mail"]{
+    background-color: rgb(24, 24, 24);
+    border: none;
+}
+::placeholder{
+    color: var(--white);
+}
+@media screen and (max-width:575px) {
+    .subscribe {
+        margin-left: 40px;
+
+    }
+
+    .form::after {
+        width: 100px;
+    }
     
 }
